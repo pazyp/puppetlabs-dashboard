@@ -196,6 +196,7 @@ class dashboard (
         mode    => '0755'
         source  => 'puppet:///modules/dashboard/init.debian'
       }
+    }
   }
 
   package { $dashboard_package:
