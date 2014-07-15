@@ -187,6 +187,15 @@ class dashboard (
       subscribe  => File['/etc/puppet-dashboard/database.yml'],
       require    => Exec['db-migrate']
     }
+
+    if $deb_fix_init {
+      file { '/etc/init.d/puppet-dashboard':
+        ensure  => present,
+        owner   => '0',
+        group   => '0',
+        mode    => '0755'
+        source  => 'puppet:///modules/dashboard/init.debian'
+      }
   }
 
   package { $dashboard_package:

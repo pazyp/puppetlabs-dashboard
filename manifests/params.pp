@@ -48,6 +48,7 @@ class dashboard::params {
       $dashboard_workers_start   = 'yes'
       $mysql_package_provider    = 'aptitude'
       $ruby_mysql_package        = 'libmysql-ruby1.8'
+      $deb_fix_init              = true
     }
 
     default: {
