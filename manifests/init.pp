@@ -193,9 +193,9 @@ class dashboard (
         ensure  => present,
         owner   => '0',
         group   => '0',
-        mode    => '0755'
-        source  => 'puppet:///modules/dashboard/init.debian'
-        require => Package[$dashboard_package]
+        mode    => '0755',
+        source  => 'puppet:///modules/dashboard/init.debian',
+        require => Package[$dashboard_package],
       }
     }
   }
