@@ -105,7 +105,6 @@ class dashboard (
   $dashboard_charset         = $dashboard::params::dashboard_charset,
   $dashboard_site            = $dashboard::params::dashboard_site,
   $dashboard_port            = $dashboard::params::dashboard_port,
-  $dashboard_config          = $dashboard::params::dashboard_config,
   $dashboard_workers_service = $dashboard::params::dashboard_workers_service,
   $dashboard_workers_config  = $dashboard::params::dashboard_workers_config,
   $dashboard_num_workers     = $dashboard::params::dashboard_num_workers,
