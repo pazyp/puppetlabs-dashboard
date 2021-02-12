@@ -1,6 +1,6 @@
 # Puppet Dashboard Module
 
-Anrew Pazikas <andrewpazikas@gmail.com>
+Andrew Pazikas <andrewpazikas@gmail.com>
 
 This module manages and installs the Puppet Dashboard.  It also includes a Puppet Face to manage the Dashboard/Console programmatically or from the CLI
 
